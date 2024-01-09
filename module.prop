@@ -1,7 +1,7 @@
 id=crond-autostart
 name=Crond Autostart
-version=v1.0.0
-versionCode=100
+version=v1.0.1
+versionCode=101
 author=indoes
 description=Late start service for crond.
 updateJson=https://raw.githubusercontent.com/indoes/crond-autostart/master/update.json

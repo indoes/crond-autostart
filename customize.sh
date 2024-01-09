@@ -26,7 +26,7 @@ if [ command -v /system/xbin/crond &> /dev/null ]; then
 fi
 
 # Check for folder /data/crontab
-if [[ ! -d "/data/crontab" ]]
+if [[ ! -d "/data/crontab" ]]; then
    ui_print "/data/crontab dir not found"
    exit 1
 fi
