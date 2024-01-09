@@ -1,8 +1,7 @@
-#!/system/bin/sh
+#!/sbin/sh
 
-until [ $(resetprop sys.boot_completed) -eq 1 ]; do
-    sleep 90
-done
+# Sleep before the script executed (in seconds)
+sleep 90
 
 if [[ ! -d "/data/crontab" ]]; then
    ui_print "/data/crontab dir missing, crond wasn't executed"
@@ -17,5 +16,5 @@ else
       fi
    #log -t Magisk "crond is running"
    ui_print "crond is running"
-   exit 0
 fi
+exit 0
